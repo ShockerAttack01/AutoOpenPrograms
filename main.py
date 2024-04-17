@@ -66,7 +66,7 @@ write("cd privateGPT")
 locate("cdprivateGPTtyped", .8)
 enter()
 
-# Similar steps to locate "checkforlinuxsys", click it, write "cd privateGPT", etc.
+# Similar steps to locate "checkforlinuxsys"
 locate("privateGPTcd", .8)
 write("make run")
 locate("checkformakeruncmd", .8)
