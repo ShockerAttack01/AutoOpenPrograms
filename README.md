@@ -1,5 +1,5 @@
 # AutoOpenPrograms
-With this python program you will be able to change and expand what you open with it my example is an ubuntu software that has another program from another repo called privateGPT owned by Zylon
+With this python program you will be able to change and expand what you open with it my example is an ubuntu software that has another program from another repo called privateGPT made by Zylon and others 79 other contributers
 
 PrivateGPT Link: https://github.com/zylon-ai/private-gpt
 
