@@ -18,21 +18,16 @@ dir_path = os.path.dirname(os.path.abspath(__file__))
 
 # Function to press enter
 def enter():
-    pressrelease(Key.enter)
+    kb.tap(keyboard,Key.enter)
 
 # Function to type text using pyautogui (may be less reliable on some applications)
 def write(phrases):
     pg.write(phrases)
 
-# Function to press and release a keyboard key
-def pressrelease(key):
-    keyboard.press(key)
-    keyboard.release(key)
-
 # Function to locate an image on the screen and move the mouse to its center
 def locate(name, confidence):
     try:
-        locateimage = pg.locateOnScreen(f"{dir_path}/images/{name}.png", confidence=confidence)
+        locateimage = pg.locateOnScreen(f"{dir_path}/images/{name}.png or any other image file extensions other extensions haven't been tested by me", confidence=confidence)
         located = pg.center(locateimage)
         pg.moveTo(located)
     except:
@@ -42,7 +37,7 @@ def locate(name, confidence):
 def click(button, amount=1):
     canclickbutton = True
     while canclickbutton == True:
-        "Clicks the mouse button a specified number of times"
+        #Clicks the mouse button a specified number of times
         if not isinstance(amount, int):
             print("Invalid click amount specified. Using 1 click instead.")
             amount = 1
@@ -50,24 +45,24 @@ def click(button, amount=1):
         canclickbutton = False
 
 # Press the command key (might be different on some systems)
-pressrelease(Key.cmd)
+kb.tap(keyboard,Key.cmd)
 
 # Use pyautogui to locate an image named "checkfortaskbar" and write "Ubuntu"
-locate("checkfortaskbar", .8)
-write("Ubuntu")
+locate("insert image name without .png or file extensions", .8)
+write("insert what you want written")
 # Use locate to find "checkforlinuxapp" and press enter
-locate("checkforlinuxapp", .8)
+locate("insert image name without .png or file extensions", .8)
 enter()
 
 # Similar steps to locate "checkfortaskbar", click it, write "cd privateGPT", etc.
-locate("checkforlinuxsys", .8)
+locate("insert image name without .png or file extensions", .8)
 click(l)
-write("cd privateGPT")
-locate("cdprivateGPTtyped", .8)
+write("insert what you want written")
+locate("insert image name without .png or file extensions", .8)
 enter()
 
 # Similar steps to locate "checkforlinuxsys"
-locate("privateGPTcd", .8)
-write("make run")
-locate("checkformakeruncmd", .8)
+locate("insert image name without .png or file extensions", .8)
+write("insert what you want written")
+locate("insert image name without .png or file extensions", .8)
 enter()
